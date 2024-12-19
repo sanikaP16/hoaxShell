@@ -42,7 +42,7 @@ const runCommand = function (commandString) {
     executeExit, executeLs, executeTouch];
   const listOfCommands = ['cd', 'pwd', 'echo', 'exit', 'ls', 'touch']
   // use array.find
-  //
+
   for (let index = 0; index < listOfCommands.length; index++) {
     if (listOfCommands[index] === command) {
       return listOfCallbacks[index](args);
